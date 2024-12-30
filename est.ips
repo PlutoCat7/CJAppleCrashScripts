@@ -1,0 +1,612 @@
+{"app_name":"RemoteDesktopClientHEST","timestamp":"2024-05-22 16:18:31.00 +0800","app_version":"","slice_uuid":"dd94a430-5466-3ef6-9b2e-afe43d7772f8","build_version":"","platform":1,"share_with_app_devs":1,"is_first_party":1,"bug_type":"309","os_version":"macOS 13.4 (22F66)","roots_installed":0,"incident_id":"6A27DA72-4947-4742-AB90-BA4D4AF25C2C","name":"RemoteDesktopClientHEST"}
+{
+  "uptime" : 51000,
+  "procRole" : "Background",
+  "version" : 2,
+  "userID" : 501,
+  "deployVersion" : 210,
+  "modelCode" : "Mac14,7",
+  "coalitionID" : 6160,
+  "osVersion" : {
+    "train" : "macOS 13.4",
+    "build" : "22F66",
+    "releaseType" : "User"
+  },
+  "captureTime" : "2024-05-22 16:18:29.6733 +0800",
+  "incident" : "6A27DA72-4947-4742-AB90-BA4D4AF25C2C",
+  "pid" : 5827,
+  "translated" : true,
+  "cpuType" : "X86-64",
+  "roots_installed" : 0,
+  "bug_type" : "309",
+  "procLaunch" : "2024-05-22 11:25:00.7363 +0800",
+  "procStartAbsTime" : 813551180343,
+  "procExitAbsTime" : 1236164906360,
+  "procName" : "RemoteDesktopClientHEST",
+  "procPath" : "\/Applications\/RuijieWorkSpace.app\/Contents\/MacOS\/RemoteDesktopClientHEST",
+  "parentProc" : "RuijieWorkSpace",
+  "parentPid" : 5634,
+  "coalitionName" : "cn.com.ruijie.RuijieWorkSpace",
+  "crashReporterKey" : "012CF06F-8B60-3EA1-9A3C-D9C39C40ACAF",
+  "responsiblePid" : 5634,
+  "responsibleProc" : "RuijieWorkSpace",
+  "codeSigningID" : "RemoteDesktopClientHEST-55554944dd94a43054663ef69b2eafe43d7772f",
+  "codeSigningTeamID" : "",
+  "codeSigningFlags" : 536870913,
+  "codeSigningValidationCategory" : 10,
+  "codeSigningTrustLevel" : 0,
+  "wakeTime" : 25571,
+  "sleepWakeUUID" : "DBB7D504-EA69-4300-BBF4-0C964DCB8396",
+  "sip" : "enabled",
+  "vmRegionInfo" : "0x38 is not in any region.  Bytes before following region: 140722699272136\n      REGION TYPE                    START - END         [ VSIZE] PRT\/MAX SHRMOD  REGION DETAIL\n      UNUSED SPACE AT START\n--->  \n      mapped file              7ffc8e808000-7ffc9d93c000 [241.2M] r-x\/r-x SM=COW  ...t_id=9b6a3501",
+  "exception" : {"codes":"0x0000000000000001, 0x0000000000000038","rawCodes":[1,56],"type":"EXC_BAD_ACCESS","signal":"SIGSEGV","subtype":"KERN_INVALID_ADDRESS at 0x0000000000000038"},
+  "termination" : {"flags":0,"code":11,"namespace":"SIGNAL","indicator":"Segmentation fault: 11","byProc":"exc handler","byPid":5827},
+  "vmregioninfo" : "0x38 is not in any region.  Bytes before following region: 140722699272136\n      REGION TYPE                    START - END         [ VSIZE] PRT\/MAX SHRMOD  REGION DETAIL\n      UNUSED SPACE AT START\n--->  \n      mapped file              7ffc8e808000-7ffc9d93c000 [241.2M] r-x\/r-x SM=COW  ...t_id=9b6a3501",
+  "extMods" : {"caller":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"system":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"targeted":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"warnings":0},
+  "faultingThread" : 0,
+  "threads" : [{"triggered":true,"id":335713,"threadState":{"flavor":"x86_THREAD_STATE","rbp":{"value":13033308272},"r12":{"value":0},"rosetta":{"tmp2":{"value":4699514704},"tmp1":{"value":4675347724},"tmp0":{"value":18446744073709551352}},"rbx":{"value":0},"r8":{"value":335713},"r15":{"value":140423804862488},"r10":{"value":140423804862560},"rdx":{"value":0},"rdi":{"value":140424057728776},"r9":{"value":8352},"r13":{"value":448},"rflags":{"value":2097666},"rax":{"value":0},"rsp":{"value":13033307840},"r11":{"value":105553126519596},"rcx":{"value":140423804862560},"r14":{"value":140423804862528},"rsi":{"value":13033307840}},"queue":"com.apple.main-thread","frames":[{"imageOffset":42269,"imageIndex":27},{"imageOffset":91095,"imageIndex":27},{"imageOffset":41969,"imageIndex":27},{"imageOffset":175009,"symbol":"__cxa_finalize_ranges","symbolLocation":409,"imageIndex":47},{"imageOffset":174523,"symbol":"exit","symbolLocation":35,"imageIndex":47},{"imageOffset":71891,"symbol":"dyld4::LibSystemHelpers::exit(int) const","symbolLocation":11,"imageIndex":48},{"imageOffset":25688,"symbol":"start","symbolLocation":1960,"imageIndex":0}]},{"id":335714,"name":"com.apple.rosetta.exceptionserver","frames":[{"imageOffset":18068,"imageIndex":1}]},{"id":335745,"name":"QThread","frames":[{"imageOffset":140705560127912,"imageIndex":49},{"imageOffset":33438,"symbol":"poll","symbolLocation":10,"imageIndex":50},{"imageOffset":2388942,"symbol":"qt_safe_poll(pollfd*, unsigned int, timespec const*)","symbolLocation":94,"imageIndex":15},{"imageOffset":2395110,"symbol":"QEventDispatcherUNIX::processEvents(QFlags<QEventLoop::ProcessEventsFlag>)","symbolLocation":790,"imageIndex":15},{"imageOffset":1987751,"symbol":"QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>)","symbolLocation":471,"imageIndex":15},{"imageOffset":139987,"symbol":"QThread::exec()","symbolLocation":131,"imageIndex":15},{"imageOffset":143799,"imageIndex":15},{"imageOffset":25043,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":51},{"imageOffset":7123,"symbol":"thread_start","symbolLocation":15,"imageIndex":51}]},{"id":335748,"name":"com.apple.CFSocket.private","frames":[{"imageOffset":140705560127912,"imageIndex":49},{"imageOffset":41602,"symbol":"__select","symbolLocation":10,"imageIndex":50},{"imageOffset":672434,"symbol":"__CFSocketManager","symbolLocation":617,"imageIndex":52},{"imageOffset":25043,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":51},{"imageOffset":7123,"symbol":"thread_start","symbolLocation":15,"imageIndex":51}]},{"id":335750,"frames":[{"imageOffset":140705560127912,"imageIndex":49},{"imageOffset":33414,"symbol":"__accept","symbolLocation":10,"imageIndex":50},{"imageOffset":154454,"symbol":"CopyHelper::listenthread()","symbolLocation":1878,"imageIndex":44},{"imageOffset":179876,"symbol":"void* std::__1::__thread_proxy[abi:v160006]<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct>>, unsigned int (CopyHelper::*)(), CopyHelper*>>(void*)","symbolLocation":68,"imageIndex":44},{"imageOffset":25043,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":51},{"imageOffset":7123,"symbol":"thread_start","symbolLocation":15,"imageIndex":51}]},{"id":335767,"name":"com.apple.NSEventThread","frames":[{"imageOffset":140705560127912,"imageIndex":49},{"imageOffset":5554,"symbol":"mach_msg2_trap","symbolLocation":10,"imageIndex":50},{"imageOffset":63277,"symbol":"mach_msg2_internal","symbolLocation":78,"imageIndex":50},{"imageOffset":34276,"symbol":"mach_msg_overwrite","symbolLocation":692,"imageIndex":50},{"imageOffset":6298,"symbol":"mach_msg","symbolLocation":19,"imageIndex":50},{"imageOffset":510528,"symbol":"__CFRunLoopServiceMachPort","symbolLocation":145,"imageIndex":52},{"imageOffset":505035,"symbol":"__CFRunLoopRun","symbolLocation":1365,"imageIndex":52},{"imageOffset":502044,"symbol":"CFRunLoopRunSpecific","symbolLocation":560,"imageIndex":52},{"imageOffset":1697673,"symbol":"_NSEventThread","symbolLocation":132,"imageIndex":53},{"imageOffset":25043,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":51},{"imageOffset":7123,"symbol":"thread_start","symbolLocation":15,"imageIndex":51}]},{"id":336235,"name":"p2p-worker","frames":[{"imageOffset":140705560127912,"imageIndex":49},{"imageOffset":16622,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":50},{"imageOffset":26456,"symbol":"_pthread_cond_wait","symbolLocation":1242,"imageIndex":51},{"imageOffset":386883,"symbol":"asio::detail::scheduler::do_run_one(asio::detail::conditionally_enabled_mutex::scoped_lock&, asio::detail::scheduler_thread_info&, std::__1::error_code const&)","symbolLocation":499,"imageIndex":34},{"imageOffset":385745,"symbol":"asio::detail::scheduler::run(std::__1::error_code&)","symbolLocation":273,"imageIndex":34},{"imageOffset":438104,"symbol":"void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct>>, p2p_channel::Worker::Start(std::__1::shared_ptr<std::__1::promise<void>>)::$_1>>(void*)","symbolLocation":104,"imageIndex":34},{"imageOffset":25043,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":51},{"imageOffset":7123,"symbol":"thread_start","symbolLocation":15,"imageIndex":51}]},{"id":336238,"name":"p2p-JobTimer","frames":[{"imageOffset":140705560127912,"imageIndex":49},{"imageOffset":25070,"symbol":"kevent","symbolLocation":10,"imageIndex":50},{"imageOffset":37103,"symbol":"asio::detail::kqueue_reactor::run(long, asio::detail::op_queue<asio::detail::scheduler_operation>&)","symbolLocation":319,"imageIndex":26},{"imageOffset":386659,"symbol":"asio::detail::scheduler::do_run_one(asio::detail::conditionally_enabled_mutex::scoped_lock&, asio::detail::scheduler_thread_info&, std::__1::error_code const&)","symbolLocation":275,"imageIndex":34},{"imageOffset":385745,"symbol":"asio::detail::scheduler::run(std::__1::error_code&)","symbolLocation":273,"imageIndex":34},{"imageOffset":374423,"symbol":"p2p_channel::IOServiceThread::Run()","symbolLocation":55,"imageIndex":34},{"imageOffset":389150,"symbol":"void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct>>, void (p2p_channel::IOServiceThread::*)(), p2p_channel::IOServiceThread*>>(void*)","symbolLocation":62,"imageIndex":34},{"imageOffset":25043,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":51},{"imageOffset":7123,"symbol":"thread_start","symbolLocation":15,"imageIndex":51}]},{"id":336273,"name":"caulk.messenger.shared:17","frames":[{"imageOffset":140705560127912,"imageIndex":49},{"imageOffset":5422,"symbol":"semaphore_wait_trap","symbolLocation":10,"imageIndex":50},{"imageOffset":8318,"symbol":"caulk::semaphore::timed_wait(double)","symbolLocation":150,"imageIndex":54},{"imageOffset":8092,"symbol":"caulk::concurrent::details::worker_thread::run()","symbolLocation":30,"imageIndex":54},{"imageOffset":7344,"symbol":"void* caulk::thread_proxy<std::__1::tuple<caulk::thread::attributes, void (caulk::concurrent::details::worker_thread::*)(), std::__1::tuple<caulk::concurrent::details::worker_thread*>>>(void*)","symbolLocation":41,"imageIndex":54},{"imageOffset":25043,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":51},{"imageOffset":7123,"symbol":"thread_start","symbolLocation":15,"imageIndex":51}]},{"id":336314,"name":"caulk.messenger.shared:high","frames":[{"imageOffset":140705560127912,"imageIndex":49},{"imageOffset":5422,"symbol":"semaphore_wait_trap","symbolLocation":10,"imageIndex":50},{"imageOffset":8318,"symbol":"caulk::semaphore::timed_wait(double)","symbolLocation":150,"imageIndex":54},{"imageOffset":8092,"symbol":"caulk::concurrent::details::worker_thread::run()","symbolLocation":30,"imageIndex":54},{"imageOffset":7344,"symbol":"void* caulk::thread_proxy<std::__1::tuple<caulk::thread::attributes, void (caulk::concurrent::details::worker_thread::*)(), std::__1::tuple<caulk::concurrent::details::worker_thread*>>>(void*)","symbolLocation":41,"imageIndex":54},{"imageOffset":25043,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":51},{"imageOffset":7123,"symbol":"thread_start","symbolLocation":15,"imageIndex":51}]},{"id":342047,"name":"gmain","frames":[{"imageOffset":140705560127912,"imageIndex":49},{"imageOffset":41602,"symbol":"__select","symbolLocation":10,"imageIndex":50},{"imageOffset":284231,"symbol":"g_poll","symbolLocation":519,"imageIndex":29},{"imageOffset":222977,"symbol":"g_main_context_iterate","symbolLocation":433,"imageIndex":29},{"imageOffset":223236,"symbol":"g_main_context_iteration","symbolLocation":100,"imageIndex":29},{"imageOffset":230033,"symbol":"glib_worker_main","symbolLocation":33,"imageIndex":29},{"imageOffset":389738,"symbol":"g_thread_proxy","symbolLocation":90,"imageIndex":29},{"imageOffset":25043,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":51},{"imageOffset":7123,"symbol":"thread_start","symbolLocation":15,"imageIndex":51}]},{"id":342187,"name":"p2p-worker","frames":[{"imageOffset":140705560127912,"imageIndex":49},{"imageOffset":16622,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":50},{"imageOffset":26456,"symbol":"_pthread_cond_wait","symbolLocation":1242,"imageIndex":51},{"imageOffset":386883,"symbol":"asio::detail::scheduler::do_run_one(asio::detail::conditionally_enabled_mutex::scoped_lock&, asio::detail::scheduler_thread_info&, std::__1::error_code const&)","symbolLocation":499,"imageIndex":34},{"imageOffset":385745,"symbol":"asio::detail::scheduler::run(std::__1::error_code&)","symbolLocation":273,"imageIndex":34},{"imageOffset":438104,"symbol":"void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct>>, p2p_channel::Worker::Start(std::__1::shared_ptr<std::__1::promise<void>>)::$_1>>(void*)","symbolLocation":104,"imageIndex":34},{"imageOffset":25043,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":51},{"imageOffset":7123,"symbol":"thread_start","symbolLocation":15,"imageIndex":51}]},{"id":512502,"frames":[{"imageOffset":141436,"imageIndex":1}]},{"id":513534,"frames":[{"imageOffset":141436,"imageIndex":1}]},{"id":513535,"frames":[{"imageOffset":141436,"imageIndex":1}]},{"id":513536,"name":"KillManager","frames":[{"imageOffset":140705560127912,"imageIndex":49},{"imageOffset":16318,"symbol":"__semwait_signal","symbolLocation":10,"imageIndex":50},{"imageOffset":62853,"symbol":"nanosleep","symbolLocation":196,"imageIndex":47},{"imageOffset":2387339,"imageIndex":15},{"imageOffset":28435,"symbol":"KillManager::run()","symbolLocation":179,"imageIndex":24},{"imageOffset":143799,"imageIndex":15},{"imageOffset":25043,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":51},{"imageOffset":7123,"symbol":"thread_start","symbolLocation":15,"imageIndex":51}]},{"id":513537,"name":"HestEvent","frames":[{"imageOffset":140705560127912,"imageIndex":49},{"imageOffset":16622,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":50},{"imageOffset":26456,"symbol":"_pthread_cond_wait","symbolLocation":1242,"imageIndex":51},{"imageOffset":1313157,"imageIndex":27},{"imageOffset":1326105,"imageIndex":27},{"imageOffset":1317167,"imageIndex":27},{"imageOffset":1316168,"imageIndex":27},{"imageOffset":25043,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":51},{"imageOffset":7123,"symbol":"thread_start","symbolLocation":15,"imageIndex":51}]}],
+  "usedImages" : [
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 8630874112,
+    "size" : 638976,
+    "uuid" : "9e98a840-a3ac-31c1-ab97-829af9bd6864",
+    "path" : "\/usr\/lib\/dyld",
+    "name" : "dyld"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 140703128014848,
+    "size" : 196608,
+    "uuid" : "c4d322c3-30c5-3c52-adb8-2fd12ec92bc0",
+    "path" : "\/usr\/libexec\/rosetta\/runtime",
+    "name" : "runtime"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4468695040,
+    "size" : 344064,
+    "uuid" : "c8f25cdc-b334-3f67-bc30-50e9852f8da2",
+    "path" : "\/Library\/Apple\/*\/libRosettaRuntime",
+    "name" : "libRosettaRuntime"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4334280704,
+    "size" : 32768,
+    "uuid" : "dd94a430-5466-3ef6-9b2e-afe43d7772f8",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/MacOS\/RemoteDesktopClientHEST",
+    "name" : "RemoteDesktopClientHEST"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4474675200,
+    "size" : 49152,
+    "uuid" : "b3bb90b5-fb5c-3e90-bac7-19586bcbb91d",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/libRemoteDesktopEntry.2.0.117.dylib",
+    "name" : "libRemoteDesktopEntry.2.0.117.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4479795200,
+    "size" : 1998848,
+    "uuid" : "6a8c7109-2292-3aa6-b158-f116ed7c10ef",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/liblog4cplus.0.dylib",
+    "name" : "liblog4cplus.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4474793984,
+    "size" : 32768,
+    "uuid" : "25090ac8-2375-3bf6-8966-3745d49e0068",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/libLogger.dylib",
+    "name" : "libLogger.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4475105280,
+    "size" : 98304,
+    "uuid" : "f0e68874-17d8-3199-bb8d-9258a35ba972",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/libPluginCore.dylib",
+    "name" : "libPluginCore.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4475633664,
+    "size" : 114688,
+    "uuid" : "9eb572d1-e615-34e6-8677-e718c2c5b9a7",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/libPluginMgr.dylib",
+    "name" : "libPluginMgr.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4491177984,
+    "size" : 1228800,
+    "uuid" : "e68b2230-f269-3946-a962-edd795b70d31",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/libSKDpl.dylib",
+    "name" : "libSKDpl.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4476026880,
+    "size" : 81920,
+    "uuid" : "13eb4aa3-2fad-37af-b8ec-136dff12a894",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/libOSAdapter.dylib",
+    "name" : "libOSAdapter.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4477095936,
+    "size" : 327680,
+    "uuid" : "60845ff2-6bbd-386a-9a57-6482787bf108",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/libSKApplication.dylib",
+    "name" : "libSKApplication.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4502892544,
+    "CFBundleShortVersionString" : "5.15",
+    "CFBundleIdentifier" : "org.qt-project.QtWidgets",
+    "size" : 4489216,
+    "uuid" : "9c4bc9e6-2207-347c-9b14-ac4890e517b4",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Frameworks\/QtWidgets.framework\/Versions\/5\/QtWidgets",
+    "name" : "QtWidgets",
+    "CFBundleVersion" : "5.15.9"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4517244928,
+    "CFBundleShortVersionString" : "5.15",
+    "CFBundleIdentifier" : "org.qt-project.QtGui",
+    "size" : 4636672,
+    "uuid" : "51a6ad4d-568d-3d2a-9b45-738b071692e1",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Frameworks\/QtGui.framework\/Versions\/5\/QtGui",
+    "name" : "QtGui",
+    "CFBundleVersion" : "5.15.9"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4498513920,
+    "CFBundleShortVersionString" : "5.15",
+    "CFBundleIdentifier" : "org.qt-project.QtNetwork",
+    "size" : 1245184,
+    "uuid" : "1589596f-22d6-30bb-8126-b32a3abdda60",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Frameworks\/QtNetwork.framework\/Versions\/5\/QtNetwork",
+    "name" : "QtNetwork",
+    "CFBundleVersion" : "5.15.9"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4537454592,
+    "CFBundleShortVersionString" : "5.15",
+    "CFBundleIdentifier" : "org.qt-project.QtCore",
+    "size" : 5554176,
+    "uuid" : "d64abe04-7f09-3e8a-bfee-313f6d030f21",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Frameworks\/QtCore.framework\/Versions\/5\/QtCore",
+    "name" : "QtCore",
+    "CFBundleVersion" : "5.15.9"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4496953344,
+    "size" : 917504,
+    "uuid" : "aba8fbf1-2424-37ea-a2f5-d326f0e3492d",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/HEST\/ESTKit.framework\/Versions\/A\/Frameworks\/libiconv.2.dylib",
+    "name" : "libiconv.2.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4478722048,
+    "CFBundleShortVersionString" : "5.15",
+    "CFBundleIdentifier" : "org.qt-project.QtSvg",
+    "size" : 229376,
+    "uuid" : "9e668806-25c1-379b-ba83-b1772e0a9be0",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Frameworks\/QtSvg.framework\/Versions\/5\/QtSvg",
+    "name" : "QtSvg",
+    "CFBundleVersion" : "5.15.9"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4533379072,
+    "size" : 1458176,
+    "uuid" : "9590175b-776b-33ca-9e12-cc71feaed496",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/PlugIns\/platforms\/libqcocoa.dylib",
+    "name" : "libqcocoa.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4531613696,
+    "CFBundleShortVersionString" : "5.15",
+    "CFBundleIdentifier" : "org.qt-project.QtDBus",
+    "size" : 393216,
+    "uuid" : "b3ebdd7b-ac0c-335b-b987-530a647f5728",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Frameworks\/QtDBus.framework\/Versions\/5\/QtDBus",
+    "name" : "QtDBus",
+    "CFBundleVersion" : "5.15.9"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4580761600,
+    "CFBundleShortVersionString" : "5.15",
+    "CFBundleIdentifier" : "org.qt-project.QtPrintSupport",
+    "size" : 180224,
+    "uuid" : "985c1358-d057-349b-bef7-a2f4d085e6be",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Frameworks\/QtPrintSupport.framework\/Versions\/5\/QtPrintSupport",
+    "name" : "QtPrintSupport",
+    "CFBundleVersion" : "5.15.9"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4626558976,
+    "size" : 163840,
+    "uuid" : "c60aaa3a-828f-375c-815d-c152340ca962",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/PlugIns\/styles\/libqmacstyle.dylib",
+    "name" : "libqmacstyle.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4626325504,
+    "size" : 32768,
+    "uuid" : "50a03c6a-8537-3c05-984c-0b7f41ee0b4c",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/PlugIns\/iconengines\/libqsvgicon.dylib",
+    "name" : "libqsvgicon.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4629839872,
+    "size" : 65536,
+    "uuid" : "1d043270-56bc-35fb-bef3-b1ba8ecb9120",
+    "path" : "\/usr\/lib\/libobjc-trampolines.dylib",
+    "name" : "libobjc-trampolines.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4650987520,
+    "size" : 1769472,
+    "uuid" : "9f4a0b3e-0f9e-39b7-a4f6-eae10ff79ba5",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/libRemoteWidget.2.0.117.dylib",
+    "name" : "libRemoteWidget.2.0.117.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4654862336,
+    "size" : 475136,
+    "uuid" : "e29c2cb4-81b5-3f03-9a27-c6918184662b",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/libEstWidgetMgrMac.2.0.117.dylib",
+    "name" : "libEstWidgetMgrMac.2.0.117.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4659343360,
+    "CFBundleShortVersionString" : "5.0",
+    "CFBundleIdentifier" : "cn.com.ruijie.ESTKit",
+    "size" : 475136,
+    "uuid" : "2dd07223-57ab-358a-a04a-20a6f4d56311",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/HEST\/ESTKit.framework\/Versions\/A\/ESTKit",
+    "name" : "ESTKit",
+    "CFBundleVersion" : "240513151846"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4675305472,
+    "size" : 6782976,
+    "uuid" : "01446d15-ee50-3cb6-b7eb-59a88bb501f8",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/HEST\/ESTKit.framework\/Versions\/A\/Frameworks\/libhest.0.0.dylib",
+    "name" : "libhest.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4630872064,
+    "size" : 32768,
+    "uuid" : "215f2d93-0b8a-3693-984f-03975af9dc40",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/HEST\/ESTKit.framework\/Versions\/A\/Frameworks\/libffi.8.dylib",
+    "name" : "libffi.8.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4662153216,
+    "size" : 950272,
+    "uuid" : "d2f182f0-00bc-3581-9a5a-a10eb34d9fe9",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/HEST\/ESTKit.framework\/Versions\/A\/Frameworks\/libglib-2.0.0.dylib",
+    "name" : "libglib-2.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4709552128,
+    "size" : 671744,
+    "uuid" : "51356b8a-0855-37ae-a0a5-b187c85dcb30",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/HEST\/ESTKit.framework\/Versions\/A\/Frameworks\/libavutil.58.29.100.dylib",
+    "name" : "libavutil.58.29.100.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4630650880,
+    "size" : 16384,
+    "uuid" : "7fb45c03-afc3-34a7-a56c-5c36d95cb8ce",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/HEST\/ESTKit.framework\/Versions\/A\/Frameworks\/libgmodule-2.0.0.dylib",
+    "name" : "libgmodule-2.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4639035392,
+    "size" : 49152,
+    "uuid" : "d4306be6-e3d5-35df-ab4c-cfd42115b2e3",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/HEST\/ESTKit.framework\/Versions\/A\/Frameworks\/libintl.8.dylib",
+    "name" : "libintl.8.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4728041472,
+    "size" : 4669440,
+    "uuid" : "ea9624e9-e33b-3baa-acdf-93491684df5f",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/HEST\/ESTKit.framework\/Versions\/A\/Frameworks\/libhestusbp.1.0.0.dylib",
+    "name" : "libhestusbp.1.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4769091584,
+    "size" : 10633216,
+    "uuid" : "8272ade4-1e7a-34e7-bffb-b19a530adcaf",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/HEST\/ESTKit.framework\/Versions\/A\/Frameworks\/libp2p_channel_module.dylib",
+    "name" : "libp2p_channel_module.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4740210688,
+    "size" : 2211840,
+    "uuid" : "50f43f3d-81df-3913-be2c-4b285e44256c",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/HEST\/ESTKit.framework\/Versions\/A\/Frameworks\/libnice.10.dylib",
+    "name" : "libnice.10.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4649725952,
+    "size" : 229376,
+    "uuid" : "f0a1c52a-4ec0-3817-82dd-d2dccff9f80a",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/HEST\/ESTKit.framework\/Versions\/A\/Frameworks\/libgobject-2.0.0.dylib",
+    "name" : "libgobject-2.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4803825664,
+    "size" : 7323648,
+    "uuid" : "60d37099-c849-375f-be93-36c89b7041c9",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/HEST\/ESTKit.framework\/Versions\/A\/Frameworks\/libavcodec.60.31.102.dylib",
+    "name" : "libavcodec.60.31.102.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4656447488,
+    "size" : 278528,
+    "uuid" : "23ed2973-cd71-38c7-ab54-7d6622af829e",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/HEST\/ESTKit.framework\/Versions\/A\/Frameworks\/libpcre.1.dylib",
+    "name" : "libpcre.1.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4649209856,
+    "size" : 114688,
+    "uuid" : "71352c8a-dd46-3b79-a24e-2e61f0f111eb",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/HEST\/ESTKit.framework\/Versions\/A\/Frameworks\/libusb-1.0.0.dylib",
+    "name" : "libusb-1.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4630757376,
+    "size" : 16384,
+    "uuid" : "74258765-008e-3eb5-b44c-f55ff3683ffa",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/HEST\/ESTKit.framework\/Versions\/A\/Frameworks\/libgthread-2.0.0.dylib",
+    "name" : "libgthread-2.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4669263872,
+    "size" : 1163264,
+    "uuid" : "ffbe71f3-4c0d-30fa-ae14-62ffdb790577",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/HEST\/ESTKit.framework\/Versions\/A\/Frameworks\/libgio-2.0.0.dylib",
+    "name" : "libgio-2.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4648865792,
+    "size" : 65536,
+    "uuid" : "7c47d263-d932-3b3b-8f83-47040c4bb76e",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/libAudioHelperPlugin.dylib",
+    "name" : "libAudioHelperPlugin.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4674805760,
+    "size" : 131072,
+    "uuid" : "2a35315a-37f0-3241-b84e-36654c1d4dbd",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/libRunningHelperPlugin.dylib",
+    "name" : "libRunningHelperPlugin.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4761821184,
+    "size" : 704512,
+    "uuid" : "13bed677-4de9-31ab-b5ff-7828566b7c2e",
+    "path" : "\/Applications\/RuijieWorkSpace.app\/Contents\/Libraries\/RDPSubSystem\/libClipboardService.dylib",
+    "name" : "libClipboardService.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 5218254848,
+    "CFBundleShortVersionString" : "1.14",
+    "CFBundleIdentifier" : "com.apple.audio.units.Components",
+    "size" : 1310720,
+    "uuid" : "1506f5ce-501f-36b7-a132-4a058d8462dd",
+    "path" : "\/System\/Library\/Components\/CoreAudio.component\/Contents\/MacOS\/CoreAudio",
+    "name" : "CoreAudio",
+    "CFBundleVersion" : "1.14"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 5594865664,
+    "CFBundleShortVersionString" : "1.0",
+    "CFBundleIdentifier" : "com.apple.audio.AudioDSPComponents",
+    "size" : 9977856,
+    "uuid" : "b2ab4808-92a3-3c11-896e-4a477cb9bc58",
+    "path" : "\/System\/Library\/Components\/AudioDSP.component\/Contents\/MacOS\/AudioDSP",
+    "name" : "AudioDSP",
+    "CFBundleVersion" : "1"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703146975232,
+    "size" : 557048,
+    "uuid" : "5ca0d0cf-fcdd-3180-af7b-f137fe1e7aca",
+    "path" : "\/usr\/lib\/system\/libsystem_c.dylib",
+    "name" : "libsystem_c.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703148412928,
+    "size" : 147448,
+    "uuid" : "c40e240f-5738-31c6-8eb3-d4a5f78060d2",
+    "path" : "\/usr\/lib\/system\/libdyld.dylib",
+    "name" : "libdyld.dylib"
+  },
+  {
+    "size" : 0,
+    "source" : "A",
+    "base" : 0,
+    "uuid" : "00000000-0000-0000-0000-000000000000"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703148126208,
+    "size" : 237560,
+    "uuid" : "84597863-2c70-3a4a-b0f1-84b39d731209",
+    "path" : "\/usr\/lib\/system\/libsystem_kernel.dylib",
+    "name" : "libsystem_kernel.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703148363776,
+    "size" : 49152,
+    "uuid" : "8cb0b396-011f-31f2-8915-94cde1abae84",
+    "path" : "\/usr\/lib\/system\/libsystem_pthread.dylib",
+    "name" : "libsystem_pthread.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703148777472,
+    "CFBundleShortVersionString" : "6.9",
+    "CFBundleIdentifier" : "com.apple.CoreFoundation",
+    "size" : 4829184,
+    "uuid" : "661e8471-af64-30f9-9ce3-40bdaeeec321",
+    "path" : "\/System\/Library\/Frameworks\/CoreFoundation.framework\/Versions\/A\/CoreFoundation",
+    "name" : "CoreFoundation",
+    "CFBundleVersion" : "1977"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703199305728,
+    "CFBundleShortVersionString" : "6.9",
+    "CFBundleIdentifier" : "com.apple.AppKit",
+    "size" : 16809977,
+    "uuid" : "935dfca1-61f9-377d-895a-99ef90266c86",
+    "path" : "\/System\/Library\/Frameworks\/AppKit.framework\/Versions\/C\/AppKit",
+    "name" : "AppKit",
+    "CFBundleVersion" : "2299.60.124"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703313350656,
+    "CFBundleShortVersionString" : "1.0",
+    "CFBundleIdentifier" : "com.apple.audio.caulk",
+    "size" : 151540,
+    "uuid" : "905c3d28-a423-35c6-8a02-c88ba83bc3f6",
+    "path" : "\/System\/Library\/PrivateFrameworks\/caulk.framework\/Versions\/A\/caulk",
+    "name" : "caulk"
+  }
+],
+  "sharedCache" : {
+  "base" : 140703144230912,
+  "size" : 21474836480,
+  "uuid" : "9bdf650c-7fc0-3de1-bac4-8535aea9b6aa"
+},
+  "legacyInfo" : {
+  "threadTriggered" : {
+    "queue" : "com.apple.main-thread"
+  }
+},
+  "logWritingSignature" : "b052eda01ba93bbda7981e312e9d15293f14542e",
+  "trialInfo" : {
+  "rollouts" : [
+    {
+      "rolloutId" : "62c74108bcb0435c2153f963",
+      "factorPackIds" : {
+        "SIRI_TEXT_TO_SPEECH" : "651df1e6d0c9ce2f459b522f"
+      },
+      "deploymentId" : 240000394
+    },
+    {
+      "rolloutId" : "62699e1ec1ff2978b47f6c3b",
+      "factorPackIds" : {
+        "SIRI_FIND_MY_CONFIGURATION_FILES" : "652805151bce5442b8d752e1"
+      },
+      "deploymentId" : 240000031
+    }
+  ],
+  "experiments" : [
+
+  ]
+}
+}

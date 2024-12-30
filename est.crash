@@ -1,0 +1,232 @@
+Incident Identifier: 6A27DA72-4947-4742-AB90-BA4D4AF25C2C
+CrashReporter Key:   012CF06F-8B60-3EA1-9A3C-D9C39C40ACAF
+Hardware Model:      Mac14,7
+Process:             RemoteDesktopClientHEST [5827]
+Path:                /Applications/RuijieWorkSpace.app/Contents/MacOS/RemoteDesktopClientHEST
+Report Version:      104
+Code Type:           X86-64 (Native(?))
+Role:                Background
+Parent Process:      RuijieWorkSpace [5634]
+Coalition:           cn.com.ruijie.RuijieWorkSpace [6160]
+
+Date/Time:           2024-05-22 16:18:29.6733 +0800
+Launch Time:         2024-05-22 11:25:00.7363 +0800
+OS Version:          macOS 13.4 (22F66)
+Release Type:        User
+Baseband Version:    
+
+Exception Type:  EXC_BAD_ACCESS (SIGSEGV)
+Exception Codes: 0x0000000000000001, 0x0000000000000038
+Triggered by Thread:  0
+
+
+Thread 0 name:  com.apple.main-thread
+Thread 0 Crashed:
+0    libhest.0.0.dylib                       0x116ac251d 0x116ab8000 + 42269
+1    libhest.0.0.dylib                       0x116ace3d7 0x116ab8000 + 91095
+2    libhest.0.0.dylib                       0x116ac23f1 0x116ab8000 + 41969
+3    libsystem_c.dylib                       0x7ff8011acba1 __cxa_finalize_ranges + 409
+4    libsystem_c.dylib                       0x7ff8011ac9bb exit + 35
+5    libdyld.dylib                           0x7ff8012f28d3 dyld4::LibSystemHelpers::exit(int) const + 11
+6    dyld                                    0x202711458 start + 1960
+
+Thread 1 name:  com.apple.rosetta.exceptionserver
+Thread 1:
+0    runtime                                 0x7ff7fff71694 0x7ff7fff6d000 + 18068
+
+Thread 2 name:  QThread
+Thread 2:
+0                                            0x7ff890ede9a8 0x0 + -1863456344
+1    libsystem_kernel.dylib                  0x7ff8012a329e poll + 10
+2    QtCore                                  0x10e9883ce qt_safe_poll(pollfd*, unsigned int, timespec const*) + 94
+3    QtCore                                  0x10e989be6 QEventDispatcherUNIX::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) + 790
+4    QtCore                                  0x10e9264a7 QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) + 471
+5    QtCore                                  0x10e7632d3 QThread::exec() + 131
+6    QtCore                                  0x10e7641b7 0x10e741000 + 143799
+7    libsystem_pthread.dylib                 0x7ff8012db1d3 _pthread_start + 125
+8    libsystem_pthread.dylib                 0x7ff8012d6bd3 thread_start + 15
+
+Thread 3 name:  com.apple.CFSocket.private
+Thread 3:
+0                                            0x7ff890ede9a8 0x0 + -1863456344
+1    libsystem_kernel.dylib                  0x7ff8012a5282 __select + 10
+2    CoreFoundation                          0x7ff8013de2b2 __CFSocketManager + 617
+3    libsystem_pthread.dylib                 0x7ff8012db1d3 _pthread_start + 125
+4    libsystem_pthread.dylib                 0x7ff8012d6bd3 thread_start + 15
+
+Thread 4:
+0                                            0x7ff890ede9a8 0x0 + -1863456344
+1    libsystem_kernel.dylib                  0x7ff8012a3286 __accept + 10
+2    libClipboardService.dylib               0x11bd5fb56 CopyHelper::listenthread() + 1878
+3    libClipboardService.dylib               0x11bd65ea4 void* std::__1::__thread_proxy[abi:v160006]<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct>>, unsigned int (CopyHelper::*)(), CopyHelper*>>(void*) + 68
+4    libsystem_pthread.dylib                 0x7ff8012db1d3 _pthread_start + 125
+5    libsystem_pthread.dylib                 0x7ff8012d6bd3 thread_start + 15
+
+Thread 5 name:  com.apple.NSEventThread
+Thread 5:
+0                                            0x7ff890ede9a8 0x0 + -1863456344
+1    libsystem_kernel.dylib                  0x7ff80129c5b2 mach_msg2_trap + 10
+2    libsystem_kernel.dylib                  0x7ff8012aa72d mach_msg2_internal + 78
+3    libsystem_kernel.dylib                  0x7ff8012a35e4 mach_msg_overwrite + 692
+4    libsystem_kernel.dylib                  0x7ff80129c89a mach_msg + 19
+5    CoreFoundation                          0x7ff8013b6a40 __CFRunLoopServiceMachPort + 145
+6    CoreFoundation                          0x7ff8013b54cb __CFRunLoopRun + 1365
+7    CoreFoundation                          0x7ff8013b491c CFRunLoopRunSpecific + 560
+8    AppKit                                  0x7ff804508789 _NSEventThread + 132
+9    libsystem_pthread.dylib                 0x7ff8012db1d3 _pthread_start + 125
+10   libsystem_pthread.dylib                 0x7ff8012d6bd3 thread_start + 15
+
+Thread 6 name:  p2p-worker
+Thread 6:
+0                                            0x7ff890ede9a8 0x0 + -1863456344
+1    libsystem_kernel.dylib                  0x7ff80129f0ee __psynch_cvwait + 10
+2    libsystem_pthread.dylib                 0x7ff8012db758 _pthread_cond_wait + 1242
+3    libp2p_channel_module.dylib             0x11c487743 asio::detail::scheduler::do_run_one(asio::detail::conditionally_enabled_mutex::scoped_lock&, asio::detail::scheduler_thread_info&, std::__1::error_code const&) + 499
+4    libp2p_channel_module.dylib             0x11c4872d1 asio::detail::scheduler::run(std::__1::error_code&) + 273
+5    libp2p_channel_module.dylib             0x11c493f58 void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct>>, p2p_channel::Worker::Start(std::__1::shared_ptr<std::__1::promise<void>>)::$_1>>(void*) + 104
+6    libsystem_pthread.dylib                 0x7ff8012db1d3 _pthread_start + 125
+7    libsystem_pthread.dylib                 0x7ff8012d6bd3 thread_start + 15
+
+Thread 7 name:  p2p-JobTimer
+Thread 7:
+0                                            0x7ff890ede9a8 0x0 + -1863456344
+1    libsystem_kernel.dylib                  0x7ff8012a11ee kevent + 10
+2    ESTKit                                  0x115b880ef asio::detail::kqueue_reactor::run(long, asio::detail::op_queue<asio::detail::scheduler_operation>&) + 319
+3    libp2p_channel_module.dylib             0x11c487663 asio::detail::scheduler::do_run_one(asio::detail::conditionally_enabled_mutex::scoped_lock&, asio::detail::scheduler_thread_info&, std::__1::error_code const&) + 275
+4    libp2p_channel_module.dylib             0x11c4872d1 asio::detail::scheduler::run(std::__1::error_code&) + 273
+5    libp2p_channel_module.dylib             0x11c484697 p2p_channel::IOServiceThread::Run() + 55
+6    libp2p_channel_module.dylib             0x11c48801e void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct>>, void (p2p_channel::IOServiceThread::*)(), p2p_channel::IOServiceThread*>>(void*) + 62
+7    libsystem_pthread.dylib                 0x7ff8012db1d3 _pthread_start + 125
+8    libsystem_pthread.dylib                 0x7ff8012d6bd3 thread_start + 15
+
+Thread 8 name:  caulk.messenger.shared:17
+Thread 8:
+0                                            0x7ff890ede9a8 0x0 + -1863456344
+1    libsystem_kernel.dylib                  0x7ff80129c52e semaphore_wait_trap + 10
+2    caulk                                   0x7ff80b02f07e caulk::semaphore::timed_wait(double) + 150
+3    caulk                                   0x7ff80b02ef9c caulk::concurrent::details::worker_thread::run() + 30
+4    caulk                                   0x7ff80b02ecb0 void* caulk::thread_proxy<std::__1::tuple<caulk::thread::attributes, void (caulk::concurrent::details::worker_thread::*)(), std::__1::tuple<caulk::concurrent::details::worker_thread*>>>(void*) + 41
+5    libsystem_pthread.dylib                 0x7ff8012db1d3 _pthread_start + 125
+6    libsystem_pthread.dylib                 0x7ff8012d6bd3 thread_start + 15
+
+Thread 9 name:  caulk.messenger.shared:high
+Thread 9:
+0                                            0x7ff890ede9a8 0x0 + -1863456344
+1    libsystem_kernel.dylib                  0x7ff80129c52e semaphore_wait_trap + 10
+2    caulk                                   0x7ff80b02f07e caulk::semaphore::timed_wait(double) + 150
+3    caulk                                   0x7ff80b02ef9c caulk::concurrent::details::worker_thread::run() + 30
+4    caulk                                   0x7ff80b02ecb0 void* caulk::thread_proxy<std::__1::tuple<caulk::thread::attributes, void (caulk::concurrent::details::worker_thread::*)(), std::__1::tuple<caulk::concurrent::details::worker_thread*>>>(void*) + 41
+5    libsystem_pthread.dylib                 0x7ff8012db1d3 _pthread_start + 125
+6    libsystem_pthread.dylib                 0x7ff8012d6bd3 thread_start + 15
+
+Thread 10 name:  gmain
+Thread 10:
+0                                            0x7ff890ede9a8 0x0 + -1863456344
+1    libsystem_kernel.dylib                  0x7ff8012a5282 __select + 10
+2    libglib-2.0.0.dylib                     0x115e72647 g_poll + 519
+3    libglib-2.0.0.dylib                     0x115e63701 g_main_context_iterate + 433
+4    libglib-2.0.0.dylib                     0x115e63804 g_main_context_iteration + 100
+5    libglib-2.0.0.dylib                     0x115e65291 glib_worker_main + 33
+6    libglib-2.0.0.dylib                     0x115e8c26a g_thread_proxy + 90
+7    libsystem_pthread.dylib                 0x7ff8012db1d3 _pthread_start + 125
+8    libsystem_pthread.dylib                 0x7ff8012d6bd3 thread_start + 15
+
+Thread 11 name:  p2p-worker
+Thread 11:
+0                                            0x7ff890ede9a8 0x0 + -1863456344
+1    libsystem_kernel.dylib                  0x7ff80129f0ee __psynch_cvwait + 10
+2    libsystem_pthread.dylib                 0x7ff8012db758 _pthread_cond_wait + 1242
+3    libp2p_channel_module.dylib             0x11c487743 asio::detail::scheduler::do_run_one(asio::detail::conditionally_enabled_mutex::scoped_lock&, asio::detail::scheduler_thread_info&, std::__1::error_code const&) + 499
+4    libp2p_channel_module.dylib             0x11c4872d1 asio::detail::scheduler::run(std::__1::error_code&) + 273
+5    libp2p_channel_module.dylib             0x11c493f58 void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct>>, p2p_channel::Worker::Start(std::__1::shared_ptr<std::__1::promise<void>>)::$_1>>(void*) + 104
+6    libsystem_pthread.dylib                 0x7ff8012db1d3 _pthread_start + 125
+7    libsystem_pthread.dylib                 0x7ff8012d6bd3 thread_start + 15
+
+Thread 12:
+0    runtime                                 0x7ff7fff8f87c 0x7ff7fff6d000 + 141436
+
+Thread 13:
+0    runtime                                 0x7ff7fff8f87c 0x7ff7fff6d000 + 141436
+
+Thread 14:
+0    runtime                                 0x7ff7fff8f87c 0x7ff7fff6d000 + 141436
+
+Thread 15 name:  KillManager
+Thread 15:
+0                                            0x7ff890ede9a8 0x0 + -1863456344
+1    libsystem_kernel.dylib                  0x7ff80129efbe __semwait_signal + 10
+2    libsystem_c.dylib                       0x7ff801191585 nanosleep + 196
+3    QtCore                                  0x10e987d8b 0x10e741000 + 2387339
+4    libRemoteWidget.2.0.117.dylib           0x11538df13 KillManager::run() + 179
+5    QtCore                                  0x10e7641b7 0x10e741000 + 143799
+6    libsystem_pthread.dylib                 0x7ff8012db1d3 _pthread_start + 125
+7    libsystem_pthread.dylib                 0x7ff8012d6bd3 thread_start + 15
+
+Thread 16 name:  HestEvent
+Thread 16:
+0                                            0x7ff890ede9a8 0x0 + -1863456344
+1    libsystem_kernel.dylib                  0x7ff80129f0ee __psynch_cvwait + 10
+2    libsystem_pthread.dylib                 0x7ff8012db758 _pthread_cond_wait + 1242
+3    libhest.0.0.dylib                       0x116bf8985 0x116ab8000 + 1313157
+4    libhest.0.0.dylib                       0x116bfbc19 0x116ab8000 + 1326105
+5    libhest.0.0.dylib                       0x116bf992f 0x116ab8000 + 1317167
+6    libhest.0.0.dylib                       0x116bf9548 0x116ab8000 + 1316168
+7    libsystem_pthread.dylib                 0x7ff8012db1d3 _pthread_start + 125
+8    libsystem_pthread.dylib                 0x7ff8012d6bd3 thread_start + 15
+
+Binary Images:
+0x20270b000 - 0x2027a6fff dyld x86_64 <9e98a840a3ac31c1ab97829af9bd6864> /usr/lib/dyld
+0x7ff7fff6d000 - 0x7ff7fff9cfff runtime arm64 <c4d322c330c53c52adb82fd12ec92bc0> /usr/libexec/rosetta/runtime
+0x10a5ae000 - 0x10a601fff libRosettaRuntime arm64 <c8f25cdcb3343f67bc3050e9852f8da2> /Library/Apple/*/libRosettaRuntime
+0x10257e000 - 0x102585fff RemoteDesktopClientHEST x86_64 <dd94a43054663ef69b2eafe43d7772f8> /Applications/RuijieWorkSpace.app/Contents/MacOS/RemoteDesktopClientHEST
+0x10ab62000 - 0x10ab6dfff libRemoteDesktopEntry.2.0.117.dylib x86_64 <b3bb90b5fb5c3e90bac719586bcbb91d> /Applications/RuijieWorkSpace.app/Contents/Libraries/libRemoteDesktopEntry.2.0.117.dylib
+0x10b044000 - 0x10b22bfff liblog4cplus.0.dylib x86_64 <6a8c710922923aa6b158f116ed7c10ef> /Applications/RuijieWorkSpace.app/Contents/Libraries/liblog4cplus.0.dylib
+0x10ab7f000 - 0x10ab86fff libLogger.dylib x86_64 <25090ac823753bf689663745d49e0068> /Applications/RuijieWorkSpace.app/Contents/Libraries/libLogger.dylib
+0x10abcb000 - 0x10abe2fff libPluginCore.dylib x86_64 <f0e6887417d83199bb8d9258a35ba972> /Applications/RuijieWorkSpace.app/Contents/Libraries/libPluginCore.dylib
+0x10ac4c000 - 0x10ac67fff libPluginMgr.dylib x86_64 <9eb572d1e61534e68677e718c2c5b9a7> /Applications/RuijieWorkSpace.app/Contents/Libraries/libPluginMgr.dylib
+0x10bb1f000 - 0x10bc4afff libSKDpl.dylib x86_64 <e68b2230f2693946a962edd795b70d31> /Applications/RuijieWorkSpace.app/Contents/Libraries/libSKDpl.dylib
+0x10acac000 - 0x10acbffff libOSAdapter.dylib x86_64 <13eb4aa32fad37afb8ec136dff12a894> /Applications/RuijieWorkSpace.app/Contents/Libraries/libOSAdapter.dylib
+0x10adb1000 - 0x10ae00fff libSKApplication.dylib x86_64 <60845ff26bbd386a9a576482787bf108> /Applications/RuijieWorkSpace.app/Contents/Libraries/libSKApplication.dylib
+0x10c64b000 - 0x10ca92fff QtWidgets x86_64 <9c4bc9e62207347c9b14ac4890e517b4> /Applications/RuijieWorkSpace.app/Contents/Frameworks/QtWidgets.framework/Versions/5/QtWidgets
+0x10d3fb000 - 0x10d866fff QtGui x86_64 <51a6ad4d568d3d2a9b45738b071692e1> /Applications/RuijieWorkSpace.app/Contents/Frameworks/QtGui.framework/Versions/5/QtGui
+0x10c21e000 - 0x10c34dfff QtNetwork x86_64 <1589596f22d630bb8126b32a3abdda60> /Applications/RuijieWorkSpace.app/Contents/Frameworks/QtNetwork.framework/Versions/5/QtNetwork
+0x10e741000 - 0x10ec8cfff QtCore x86_64 <d64abe047f093e8abfee313f6d030f21> /Applications/RuijieWorkSpace.app/Contents/Frameworks/QtCore.framework/Versions/5/QtCore
+0x10c0a1000 - 0x10c180fff libiconv.2.dylib x86_64 <aba8fbf1242437eaa2f5d326f0e3492d> /Applications/RuijieWorkSpace.app/Contents/Libraries/HEST/ESTKit.framework/Versions/A/Frameworks/libiconv.2.dylib
+0x10af3e000 - 0x10af75fff QtSvg x86_64 <9e66880625c1379bba83b1772e0a9be0> /Applications/RuijieWorkSpace.app/Contents/Frameworks/QtSvg.framework/Versions/5/QtSvg
+0x10e35e000 - 0x10e4c1fff libqcocoa.dylib x86_64 <9590175b776b33ca9e12cc71feaed496> /Applications/RuijieWorkSpace.app/Contents/PlugIns/platforms/libqcocoa.dylib
+0x10e1af000 - 0x10e20efff QtDBus x86_64 <b3ebdd7bac0c335bb987530a647f5728> /Applications/RuijieWorkSpace.app/Contents/Frameworks/QtDBus.framework/Versions/5/QtDBus
+0x11108e000 - 0x1110b9fff QtPrintSupport x86_64 <985c1358d057349bbef7a2f4d085e6be> /Applications/RuijieWorkSpace.app/Contents/Frameworks/QtPrintSupport.framework/Versions/5/QtPrintSupport
+0x113c3b000 - 0x113c62fff libqmacstyle.dylib x86_64 <c60aaa3a828f375c815dc152340ca962> /Applications/RuijieWorkSpace.app/Contents/PlugIns/styles/libqmacstyle.dylib
+0x113c02000 - 0x113c09fff libqsvgicon.dylib x86_64 <50a03c6a85373c05984c0b7f41ee0b4c> /Applications/RuijieWorkSpace.app/Contents/PlugIns/iconengines/libqsvgicon.dylib
+0x113f5c000 - 0x113f6bfff libobjc-trampolines.dylib x86_64 <1d04327056bc35fbbef3b1ba8ecb9120> /usr/lib/libobjc-trampolines.dylib
+0x115387000 - 0x115536fff libRemoteWidget.2.0.117.dylib x86_64 <9f4a0b3e0f9e39b7a4f6eae10ff79ba5> /Applications/RuijieWorkSpace.app/Contents/Libraries/libRemoteWidget.2.0.117.dylib
+0x115739000 - 0x1157acfff libEstWidgetMgrMac.2.0.117.dylib x86_64 <e29c2cb481b53f039a27c6918184662b> /Applications/RuijieWorkSpace.app/Contents/Libraries/libEstWidgetMgrMac.2.0.117.dylib
+0x115b7f000 - 0x115bf2fff ESTKit x86_64 <2dd0722357ab358aa04a20a6f4d56311> /Applications/RuijieWorkSpace.app/Contents/Libraries/HEST/ESTKit.framework/Versions/A/ESTKit
+0x116ab8000 - 0x11712ffff libhest.0.0.dylib x86_64 <01446d15ee503cb6b7eb59a88bb501f8> /Applications/RuijieWorkSpace.app/Contents/Libraries/HEST/ESTKit.framework/Versions/A/Frameworks/libhest.0.0.dylib
+0x114058000 - 0x11405ffff libffi.8.dylib x86_64 <215f2d930b8a3693984f03975af9dc40> /Applications/RuijieWorkSpace.app/Contents/Libraries/HEST/ESTKit.framework/Versions/A/Frameworks/libffi.8.dylib
+0x115e2d000 - 0x115f14fff libglib-2.0.0.dylib x86_64 <d2f182f000bc35819a5aa10eb34d9fe9> /Applications/RuijieWorkSpace.app/Contents/Libraries/HEST/ESTKit.framework/Versions/A/Frameworks/libglib-2.0.0.dylib
+0x118b61000 - 0x118c04fff libavutil.58.29.100.dylib x86_64 <51356b8a085537aea0a5b187c85dcb30> /Applications/RuijieWorkSpace.app/Contents/Libraries/HEST/ESTKit.framework/Versions/A/Frameworks/libavutil.58.29.100.dylib
+0x114022000 - 0x114025fff libgmodule-2.0.0.dylib x86_64 <7fb45c03afc334a7a56c5c36d95cb8ce> /Applications/RuijieWorkSpace.app/Contents/Libraries/HEST/ESTKit.framework/Versions/A/Frameworks/libgmodule-2.0.0.dylib
+0x114821000 - 0x11482cfff libintl.8.dylib x86_64 <d4306be6e3d535dfab4ccfd42115b2e3> /Applications/RuijieWorkSpace.app/Contents/Libraries/HEST/ESTKit.framework/Versions/A/Frameworks/libintl.8.dylib
+0x119d03000 - 0x11a176fff libhestusbp.1.0.0.dylib x86_64 <ea9624e9e33b3baaacdf93491684df5f> /Applications/RuijieWorkSpace.app/Contents/Libraries/HEST/ESTKit.framework/Versions/A/Frameworks/libhestusbp.1.0.0.dylib
+0x11c429000 - 0x11ce4cfff libp2p_channel_module.dylib x86_64 <8272ade41e7a34e7bffbb19a530adcaf> /Applications/RuijieWorkSpace.app/Contents/Libraries/HEST/ESTKit.framework/Versions/A/Frameworks/libp2p_channel_module.dylib
+0x11a89e000 - 0x11aab9fff libnice.10.dylib x86_64 <50f43f3d81df3913be2c4b285e44256c> /Applications/RuijieWorkSpace.app/Contents/Libraries/HEST/ESTKit.framework/Versions/A/Frameworks/libnice.10.dylib
+0x115253000 - 0x11528afff libgobject-2.0.0.dylib x86_64 <f0a1c52a4ec0381782ddd2dccff9f80a> /Applications/RuijieWorkSpace.app/Contents/Libraries/HEST/ESTKit.framework/Versions/A/Frameworks/libgobject-2.0.0.dylib
+0x11e549000 - 0x11ec44fff libavcodec.60.31.102.dylib x86_64 <60d37099c849375fbe9336c89b7041c9> /Applications/RuijieWorkSpace.app/Contents/Libraries/HEST/ESTKit.framework/Versions/A/Frameworks/libavcodec.60.31.102.dylib
+0x1158bc000 - 0x1158fffff libpcre.1.dylib x86_64 <23ed2973cd7138c7ab547d6622af829e> /Applications/RuijieWorkSpace.app/Contents/Libraries/HEST/ESTKit.framework/Versions/A/Frameworks/libpcre.1.dylib
+0x1151d5000 - 0x1151f0fff libusb-1.0.0.dylib x86_64 <71352c8add463b79a24e2e61f0f111eb> /Applications/RuijieWorkSpace.app/Contents/Libraries/HEST/ESTKit.framework/Versions/A/Frameworks/libusb-1.0.0.dylib
+0x11403c000 - 0x11403ffff libgthread-2.0.0.dylib x86_64 <74258765008e3eb5b44cf55ff3683ffa> /Applications/RuijieWorkSpace.app/Contents/Libraries/HEST/ESTKit.framework/Versions/A/Frameworks/libgthread-2.0.0.dylib
+0x1164f5000 - 0x116610fff libgio-2.0.0.dylib x86_64 <ffbe71f34c0d30faae1462ffdb790577> /Applications/RuijieWorkSpace.app/Contents/Libraries/HEST/ESTKit.framework/Versions/A/Frameworks/libgio-2.0.0.dylib
+0x115181000 - 0x115190fff libAudioHelperPlugin.dylib x86_64 <7c47d263d9323b3b8f8347040c4bb76e> /Applications/RuijieWorkSpace.app/Contents/Libraries/libAudioHelperPlugin.dylib
+0x116a3e000 - 0x116a5dfff libRunningHelperPlugin.dylib x86_64 <2a35315a37f03241b84e36654c1d4dbd> /Applications/RuijieWorkSpace.app/Contents/Libraries/libRunningHelperPlugin.dylib
+0x11bd3a000 - 0x11bde5fff libClipboardService.dylib x86_64 <13bed6774de931abb5ff7828566b7c2e> /Applications/RuijieWorkSpace.app/Contents/Libraries/RDPSubSystem/libClipboardService.dylib
+0x137084000 - 0x1371c3fff CoreAudio x86_64 <1506f5ce501f36b7a1324a058d8462dd> /System/Library/Components/CoreAudio.component/Contents/MacOS/CoreAudio
+0x14d7ae000 - 0x14e131fff AudioDSP x86_64 <b2ab480892a33c11896e4a477cb9bc58> /System/Library/Components/AudioDSP.component/Contents/MacOS/AudioDSP
+0x7ff801182000 - 0x7ff801209ff7 libsystem_c.dylib x86_64 <5ca0d0cffcdd3180af7bf137fe1e7aca> /usr/lib/system/libsystem_c.dylib
+0x7ff8012e1000 - 0x7ff801304ff7 libdyld.dylib x86_64 <c40e240f573831c68eb3d4a5f78060d2> /usr/lib/system/libdyld.dylib
+0x0 - 0xffffffffffffffff   <00000000000000000000000000000000> 
+0x7ff80129b000 - 0x7ff8012d4ff7 libsystem_kernel.dylib x86_64 <845978632c703a4ab0f184b39d731209> /usr/lib/system/libsystem_kernel.dylib
+0x7ff8012d5000 - 0x7ff8012e0fff libsystem_pthread.dylib x86_64 <8cb0b396011f31f2891594cde1abae84> /usr/lib/system/libsystem_pthread.dylib
+0x7ff80133a000 - 0x7ff8017d4fff CoreFoundation x86_64 <661e8471af6430f99ce340bdaeeec321> /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+0x7ff80436a000 - 0x7ff805371ff8 AppKit x86_64 <935dfca161f9377d895a99ef90266c86> /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit
+0x7ff80b02d000 - 0x7ff80b051ff3 caulk x86_64 <905c3d28a42335c68a02c88ba83bc3f6> /System/Library/PrivateFrameworks/caulk.framework/Versions/A/caulk
